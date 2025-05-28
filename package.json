@@ -1,0 +1,39 @@
+{
+  "name": "memory-palace-mcp",
+  "version": "1.0.0",
+  "description": "A Memory Palace MCP server that helps users organize information using spatial memory techniques",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch & node --watch dist/index.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "mcp",
+    "memory",
+    "palace",
+    "spatial-memory",
+    "learning",
+    "ai"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "uuid": "^10.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/uuid": "^10.0.0",
+    "typescript": "^5.0.0",
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ]
+} 

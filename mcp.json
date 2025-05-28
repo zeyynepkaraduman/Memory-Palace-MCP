@@ -1,0 +1,130 @@
+{
+  "name": "memory-palace-mcp",
+  "version": "1.0.0",
+  "description": "A Memory Palace MCP server implementing the Method of Loci technique for enhanced learning and memory retention",
+  "author": "Memory Palace Developer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/memory-palace-mcp.git"
+  },
+  "homepage": "https://github.com/username/memory-palace-mcp#readme",
+  "keywords": [
+    "memory",
+    "palace",
+    "learning",
+    "mnemonic",
+    "spatial-memory",
+    "method-of-loci",
+    "education",
+    "recall",
+    "ai",
+    "mcp"
+  ],
+  "categories": [
+    "Education",
+    "Productivity",
+    "Memory"
+  ],
+  "runtime": "node",
+  "entrypoint": "dist/index.js",
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "requirements": {
+    "node": ">=18.0.0"
+  },
+  "tools": [
+    {
+      "name": "create_palace",
+      "description": "Create a new memory palace with customizable themes (ancient, modern, nature, space, underwater, library)"
+    },
+    {
+      "name": "list_palaces",
+      "description": "List all created memory palaces with statistics"
+    },
+    {
+      "name": "create_room",
+      "description": "Create rooms within palaces with 3D positioning and visual customization"
+    },
+    {
+      "name": "add_memory_item",
+      "description": "Add memory items with visual cues (images, icons, colors, shapes) and importance levels"
+    },
+    {
+      "name": "create_journey",
+      "description": "Create guided memory journeys through palace rooms for structured review"
+    },
+    {
+      "name": "take_journey",
+      "description": "Take a memory journey and review items with tracking"
+    },
+    {
+      "name": "search_memories",
+      "description": "Search for memory items by content, title, or tags"
+    },
+    {
+      "name": "get_palace_layout",
+      "description": "Get detailed layout and structure of a memory palace"
+    },
+    {
+      "name": "get_statistics",
+      "description": "Get comprehensive statistics about memory palaces usage"
+    }
+  ],
+  "resources": [
+    {
+      "name": "palaces",
+      "description": "Access to all memory palaces data"
+    },
+    {
+      "name": "statistics",
+      "description": "Usage statistics and analytics"
+    }
+  ],
+  "features": [
+    "Themed memory palaces with 6 different visual themes",
+    "3D spatial positioning for rooms and memory items",
+    "Visual memory cues (images, icons, colors, shapes)",
+    "Memory journeys with guided paths",
+    "Smart search functionality",
+    "Spaced repetition tracking",
+    "Comprehensive analytics and statistics",
+    "Tag-based organization system",
+    "Importance levels for memory items",
+    "Review count tracking"
+  ],
+  "useCases": [
+    "Language learning with vocabulary palaces",
+    "Programming education with code snippet organization",
+    "Medical studies with anatomical memory systems",
+    "Historical timeline learning",
+    "Academic research organization",
+    "Professional skill development",
+    "Certification exam preparation",
+    "Creative writing and storytelling"
+  ],
+  "examples": [
+    {
+      "title": "Programming Language Learning",
+      "description": "Create a 'Code Academy' palace with rooms for syntax, functions, and debugging, storing code snippets with visual metaphors"
+    },
+    {
+      "title": "Medical Education",
+      "description": "Build a 'Human Body Hospital' with organ-specific rooms containing anatomical facts and visual diagrams"
+    },
+    {
+      "title": "Language Mastery",
+      "description": "Construct a 'French Château' with vocabulary vaults and grammar gardens for immersive language learning"
+    }
+  ],
+  "tags": [
+    "education",
+    "memory",
+    "learning",
+    "mnemonic",
+    "spatial",
+    "recall",
+    "study",
+    "retention"
+  ]
+} 
