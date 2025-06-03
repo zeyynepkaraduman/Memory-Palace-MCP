@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#2E3440">
+    
+    <title>📰 News Memory Palace - Hafıza Sarayları ile Haber Öğrenme</title>
+    <meta name="description" content="Mastra AI Agent entegrasyonu ile haberlerden hafıza sarayları oluşturun. Öğrenmeyi güçlendirin, bilgiyi kalıcı hale getirin.">
+    <meta name="keywords" content="hafıza sarayı, memory palace, haber, news, AI, Mastra, öğrenme, eğitim">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="News Memory Palace - Hafıza Sarayları ile Haber Öğrenme">
+    <meta property="og:description" content="Mastra AI Agent entegrasyonu ile haberlerden hafıza sarayları oluşturun">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/assets/favicon.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="News Memory Palace">
+    <meta name="twitter:description" content="Haberlerden hafıza sarayları oluşturun">
+    
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/icon.png">
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .loading-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .logo {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            animation: pulse 2s infinite;
+        }
+        
+        .title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 2rem 0;
+        }
+        
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            border-top: 5px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 2rem auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        .tech-stack {
+            margin-top: 2rem;
+            opacity: 0.8;
+        }
+        
+        .tech-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.3rem 1rem;
+            margin: 0.2rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-container">
+        <div class="logo">🧠🏰</div>
+        <h1 class="title">News Memory Palace</h1>
+        <p class="subtitle">
+            Mastra AI Agent entegrasyonu ile haberlerden hafıza sarayları oluşturun. 
+            Öğrenmeyi güçlendirin, bilgiyi kalıcı hale getirin.
+        </p>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">📰</div>
+                <div class="feature-title">Güncel Haberler</div>
+                <div>Kategori bazlı haber filtreleme ve anlık takip</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔍</div>
+                <div class="feature-title">Gelişmiş Arama</div>
+                <div>Anahtar kelime bazlı detaylı haber araması</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🏰</div>
+                <div class="feature-title">Hafıza Sarayları</div>
+                <div>AI destekli otomatik saray oluşturma</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📊</div>
+                <div class="feature-title">İstatistikler</div>
+                <div>Öğrenme performansı ve detaylı analiz</div>
+            </div>
+        </div>
+        
+        <div class="spinner"></div>
+        <p>Uygulama yükleniyor...</p>
+        
+        <div class="tech-stack">
+            <div class="tech-badge">🤖 Mastra AI</div>
+            <div class="tech-badge">⚛️ React Native</div>
+            <div class="tech-badge">📱 Expo</div>
+            <div class="tech-badge">🌐 Web</div>
+            <div class="tech-badge">📰 News API</div>
+        </div>
+    </div>
+    
+    <div id="root"></div>
+    
+    <script>
+        // Show loading for 3 seconds then hide
+        setTimeout(() => {
+            document.querySelector('.loading-container').style.display = 'none';
+        }, 3000);
+    </script>
+</body>
+</html> 
