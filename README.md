@@ -1,5 +1,7 @@
 # Memory Palace MCP 🏰
 
+[![smithery badge](https://smithery.ai/badge/memory-palace-mcp)](https://smithery.ai/server/memory-palace-mcp)
+
 A Model Context Protocol (MCP) server that implements the ancient "Method of Loci" (Memory Palace) technique for enhanced learning and memory retention. This MCP helps users create virtual memory palaces, organize information spatially, and build memory journeys for effective recall.
 
 ## Features ✨
@@ -16,7 +18,7 @@ A Model Context Protocol (MCP) server that implements the ancient "Method of Loc
 ### From Smithery
 
 ```bash
-npx @smithery/cli install memory-palace-mcp
+npx -y @smithery/cli install memory-palace-mcp
 ```
 
 ### Manual Installation
